@@ -11,7 +11,7 @@ reader = SimpleMFRC522()
 try:
     # Leer el tag
     while True:
-        print("Hold a tag near the reader")
+        print("Acercar el tag al lector")
         id, text = reader.read()
         print("ID: %s\nText: %s" % (id,text))
         sleep(5)
