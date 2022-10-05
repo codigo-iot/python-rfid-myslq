@@ -4,8 +4,8 @@ from mfrc522 import SimpleMFRC522
 reader = SimpleMFRC522()
 
 try:
-        text = input('New data:')
-        print("Now place your tag to write")
+        text = input('Ingresa Texto:')
+        print("Coloca tu tag cerca del lector")
         reader.write(text)
         print("Written")
 finally:
