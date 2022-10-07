@@ -11,7 +11,7 @@ cnx = mysql.connector.connect(user='hugohugo',
 cursor = cnx.cursor()
 
 # Query
-query = ("SELECT id,nombre,temperatura FROM clima WHERE nombre='Hugo';")
+query = ("SELECT id,nombre,temperatura,fecha FROM clima WHERE id=555;")
 
 # Ejecutar cursor
 cursor.execute (query)
@@ -20,3 +20,7 @@ res = cursor.fetchall ()
 
 for x in res:
     print (x)
+
+# Cerrar todo
+cursor.close()
+cnx.close()
