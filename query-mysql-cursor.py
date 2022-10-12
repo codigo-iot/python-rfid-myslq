@@ -2,9 +2,9 @@
 import mysql.connector
 
 # Conexion
-cnx = mysql.connector.connect(user='hugohugo', 
+cnx = mysql.connector.connect(user='hugolan', 
                               password='1234', 
-                              host='localhost',
+                              host='192.168.1.185',
                               database='codigoIoT')
 
 # Cursor
