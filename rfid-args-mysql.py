@@ -18,6 +18,8 @@ try:
     # Lectura unica
     id, text = reader.read()
     print("ID: %s\nText: %s" % (id,text))
+    strrr = text.split(",")
+    print (strrr)
     sleep(1)
     
 except KeyboardInterrupt:
