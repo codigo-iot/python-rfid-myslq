@@ -22,7 +22,7 @@ try:
     # print (strrr)
     # print (strrr[0])
     sleep(1)
-    query_insert = "INSERT INTO rfid (nombre,texto,rfid) VALUES ('" + strrr[0] + "','comentario',849562518495");"
+    query_insert = "INSERT INTO rfid (nombre,texto,rfid) VALUES ('" + strrr[0] + "','comentario',849562518495);"
     print (query_insert)
 
     # Cerrar
