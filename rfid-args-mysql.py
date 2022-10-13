@@ -22,6 +22,11 @@ try:
     print (strrr)
     print (strrr[0])
     sleep(1)
+
+    # Cerrar
+    cursor.close()
+    cnx.close()
+    GPIO.cleanup()
     
 except KeyboardInterrupt:
     # Cerrar
