@@ -4,14 +4,14 @@ import mysql.connector
 # Conexion
 cnx = mysql.connector.connect(user='hugolan', 
                               password='1234', 
-                              host='192.168.1.185',
+                              host='127.0.0.1',
                               database='codigoIoT')
 
 # Cursor
 cursor = cnx.cursor()
 
 # Query
-query = ("SELECT id,nombre,temperatura,fecha FROM clima WHERE id=555;")
+query = ("SELECT * FROM rfid WHERE id=16;")
 
 # Ejecutar cursor
 cursor.execute (query)
