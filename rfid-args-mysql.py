@@ -20,6 +20,7 @@ try:
     print("ID: %s\nText: %s" % (id,text))
     strrr = text.split(",")
     print (strrr)
+    print (strrr[0])
     sleep(1)
     
 except KeyboardInterrupt:
