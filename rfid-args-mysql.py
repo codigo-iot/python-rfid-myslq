@@ -4,6 +4,12 @@ import sys
 from mfrc522 import SimpleMFRC522
 import RPi.GPIO as GPIO
 import mysql.connector
+import argparse
+
+# Parser
+parser = argparse.ArgumentParser()
+parser.add_argument("status")
+args = parser.parse_args()
 
 # Inicar el sensor
 reader = SimpleMFRC522()
@@ -22,7 +28,7 @@ try:
     # print (strrr)
     # print (strrr[0])
     sleep(1)
-    query_insert = "INSERT INTO rfid (nombre,texto,rfid) VALUES ('" + strrr[0] + "','comentario',849562518495);"
+    query_insert = "INSERT INTO rfid (nombre,texto,rfid) VALUES ('" + strrr[0] + "','" + args.status + "'," + str (id) + ");"
     print (query_insert)
 
     # Cerrar
