@@ -17,11 +17,13 @@ cursor = cnx.cursor()
 try:
     # Lectura unica
     id, text = reader.read()
-    print("ID: %s\nText: %s" % (id,text))
+    # print("ID: %s\nText: %s" % (id,text))
     strrr = text.split(",")
-    print (strrr)
-    print (strrr[0])
+    # print (strrr)
+    # print (strrr[0])
     sleep(1)
+    query_insert = "INSERT INTO rfid (nombre,texto,rfid) VALUES ('" + strrr[0] + "','comentario',849562518495");"
+    print (query_insert)
 
     # Cerrar
     cursor.close()
