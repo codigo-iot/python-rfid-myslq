@@ -30,6 +30,13 @@ try:
     sleep(1)
     query_insert = "INSERT INTO rfid (nombre,texto,rfid) VALUES ('" + strrr[0] + "','" + args.status + "'," + str (id) + ");"
     print (query_insert)
+    
+    # Ejecutar cursor
+    cursor.execute (query_insert)
+    # Asegurarse de realizar la operacion en BD
+    cnx.commit()
+    print ("Query Ok")
+    sleep (1)
 
     # Cerrar
     cursor.close()
