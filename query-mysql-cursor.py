@@ -3,7 +3,7 @@ import mysql.connector
 
 # Conexion
 cnx = mysql.connector.connect(user='hugolan', 
-                              password='1234', 
+                              password='hugohugo', 
                               host='127.0.0.1',
                               database='codigoIoT')
 
@@ -11,7 +11,7 @@ cnx = mysql.connector.connect(user='hugolan',
 cursor = cnx.cursor()
 
 # Query
-query = ("SELECT * FROM rfid WHERE id=16;")
+query = ("SELECT * FROM rfid WHERE id=3;")
 
 # Ejecutar cursor
 cursor.execute (query)
